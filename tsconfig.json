@@ -18,9 +18,15 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./apps/*"] // 모노레포의 하위 프로젝트로 변경
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "apps/**/*" // 각 하위 프로젝트의 소스코드 포함
+  ],
   "exclude": ["node_modules"]
 }

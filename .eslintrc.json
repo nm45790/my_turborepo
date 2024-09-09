@@ -1,0 +1,24 @@
+{
+  "extends": ["airbnb", "airbnb/hooks"],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2021": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "rules": {
+    // 추가 규칙
+    "no-console": "warn", // console.log를 경고로 처리
+    "no-debugger": "warn", // 디버깅용 코드를 포함하지 않도록 경고.
+    "eqeqeq": ["error", "always"], // 엄격한 비교 사용 (===)
+    "indent": ["error", 2], // 들여쓰기 2칸
+    "quotes": ["error", "single"], // 작은 따옴표 사용 강제
+    "semi": ["error", "always"], // 세미콜론 항상 사용
+    "no-unused-vars": "warn", // 사용되지 않은 변수 경고
+    "react/react-in-jsx-scope": "off", // React 17+에서 불필요한 react import 비활성화
+    "no-trailing-spaces": "error" // 라인의 끝에 공백이 남아 있지 않도록 경고.
+  }
+}
